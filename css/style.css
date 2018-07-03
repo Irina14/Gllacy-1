@@ -27,7 +27,7 @@
 
 
 html {
-  /*background-color: #f2f2f2;*/
+  background-color: #f2f2f2;
   box-sizing: border-box; 
 }
 
@@ -76,12 +76,13 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 9px 2.3%;
+  padding: 6px 2.3%;
 }
 
 .header__menu {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   width: 84.4%;
 }
 
@@ -102,7 +103,7 @@ img {
 .header__contacts {
   position: absolute;
   right: 27px;
-  bottom: -50px;
+  bottom: -55px;
   width: 200px;
   font-size: 14px;
   font-weight: 700;
@@ -125,13 +126,16 @@ img {
 }
 
 .site-menu {
-  width: 39.6%;
+  width: 55%;
 }
 
 .user-menu {
   justify-content: flex-end;
-  width: 27.6%;
+  width: 38%;
   margin-left: auto;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 .header__logo {
@@ -139,5 +143,55 @@ img {
   width: 154px;
   height: 64px;
 }
+
+.user-menu__search {
+  width: 32px;
+  height: 32px;
+  background-color: #a1b6aa;
+  border-radius: 50%;
+}
+
+.user-menu__item,
+.user-menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-menu__search:hover svg,
+.user-menu__search:focus svg,
+.user-menu__input:hover svg,
+.user-menu__input:focus svg {
+  fill: #000000;
+}
+
+.user-menu__search:hover,
+.user-menu__search:focus,
+.user-menu__input:hover,
+.user-menu__input:focus {
+  color: #000000;
+  background-color: #f8f7f4;
+}
+
+.user-menu__input {
+  width: 92px;
+  height: 32px;
+  background-color: #a1b6aa;
+  border-radius: 20px;
+}
+
+.user-menu__input svg,
+.user-menu__basket svg {
+  margin-right: 7px;
+}
+
+.user-menu__basket {
+  width: 100px;
+  height: 32px;
+  background-color: #a1b6aa;
+  border-radius: 20px;
+}
+
+
 
 
