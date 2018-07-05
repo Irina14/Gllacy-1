@@ -117,16 +117,27 @@ img {
   white-space: nowrap;
 }
 
-.site-menu li:not(:last-child) {
-  margin-right: 27px;
-}
-
 .user-menu li:not(:last-child) {
   margin-right: 10px;
 }
 
 .site-menu {
   width: 55%;
+}
+
+.site-menu__item {
+  margin: 0 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.site-menu__item:hover,
+.site-menu__item:focus {
+  margin: 0;
+  padding: 6px 14px;
+  color: #333333;
+  background-color: #f7f6f3;
+  border-bottom: none;
+  border-radius: 20px;
 }
 
 .user-menu {
@@ -139,7 +150,7 @@ img {
 }
 
 .header__logo {
-  margin-right: 24px;
+  margin-right: 10px;
   width: 154px;
   height: 64px;
 }
