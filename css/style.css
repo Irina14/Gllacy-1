@@ -83,7 +83,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 84.4%;
+  width: 87%;
 }
 
 .header__list {
@@ -122,7 +122,7 @@ img {
 }
 
 .site-menu {
-  width: 55%;
+  width: 56%;
 }
 
 .site-menu__item {
