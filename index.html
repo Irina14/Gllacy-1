@@ -13,17 +13,31 @@
       </a> 
       <nav class="header__menu">
         <ul class="header__list site-menu">
-          <li><a class="site-menu__item" href="#">Каталог</a></li>
+          <li><a class="site-menu__item" href="#">Каталог</a>
+            <ul class="sub-menu">
+              <li><a class="sub-menu__item sub-menu__item--new">Новинки</a></li>
+              <li><a class="sub-menu__item">Сливочное</a></li>
+              <li><a class="sub-menu__item">Щербеты</a></li>
+              <li><a class="sub-menu__item">Фруктовый лёд</a></li>
+              <li><a class="sub-menu__item">Мелорин</a></li>
+            </ul>
+          </li>
           <li><a class="site-menu__item" href="#">Доставка и оплата</a></li>
           <li><a class="site-menu__item" href="#">О Компании</a></li>
         </ul>
         <ul class="header__list user-menu">
-          <li><a class="user-menu__item user-menu__search" href="#">
-            <span class="visually-hidden">Поиск</span>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" fill="#FFF">
+          <li>
+            <a class="user-menu__item user-menu__search" href="#">
+              <span class="visually-hidden">Поиск</span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" fill="#FFF">
               <path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
-            </svg>
-          </a></li>
+              </svg>
+            </a>
+            <form class="modal__search" action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="search-field">Что ищем?</label>
+              <input type="text" name="search" id="search-field" placeholder="Что ищем?">
+            </form>
+          </li>
           <li><a class="user-menu__item user-menu__input" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" fill="#FFF">
               <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
@@ -46,5 +60,7 @@
         <span class="header__phone">8 812 450-25-25</span>
       </p>
     </header>
+
+
   </body>
 </html>
