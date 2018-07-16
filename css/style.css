@@ -295,7 +295,7 @@ img {
   background: #a1b6aa url("../img/basket.svg") no-repeat 15px center;
 }
 
-.user-menu__basket--null .basket-products::before {
+.user-menu__basket--null .number-products::before {
   content: "Пусто";
   margin-left: 25px;
 }
@@ -306,7 +306,7 @@ img {
   background: #f7f6f3 url("../img/basket-filled.svg") no-repeat 15px center;
 }
 
-.user-menu__basket--filled .basket-products::before {
+.user-menu__basket--filled .number-products::before {
   content: "2 товара";
   margin-left: 30px;
 }
@@ -413,3 +413,10 @@ img {
   flex-wrap: wrap;
 }
 
+.form-ordering {
+  top: 57px;
+  right: 27px;
+  display: block;
+  padding: 20px;
+
+}
