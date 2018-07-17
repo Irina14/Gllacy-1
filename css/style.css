@@ -271,7 +271,9 @@ img {
 .user-menu__search:hover + .form-search,
 .user-menu__search:focus + .form-search,
 .user-menu__input:hover + .form-input,
-.user-menu__input:focus + .form-input {
+.user-menu__input:focus + .form-input,
+.user-menu__basket--filled:hover + .form-ordering,
+.user-menu__basket--filled:focus + .form-ordering {
   display: block;
 }
 
@@ -416,7 +418,111 @@ img {
 .form-ordering {
   top: 57px;
   right: 27px;
-  display: block;
-  padding: 20px;
-
+  padding: 20px 14px 20px 20px;
+  color: #323232;
 }
+
+.form-ordering__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-ordering__total,
+.form-ordering__button {
+  align-self: flex-end;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.product__close {
+  position: relative;
+  width: 11px;
+  height: 11px;
+  margin-right: 9px;
+  background: none;
+  border: 0;
+}
+
+.product__close::before,
+.product__close::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 13px;
+  height: 1px;
+  background: #231F20;
+}
+
+.product__close::before {
+  transform: rotate(45deg);
+}
+
+.product__close::after {
+  transform: rotate(-45deg);
+}
+
+.product__image {
+  width: 33px;
+  height: 33px;
+  margin-right: 14px;
+}
+
+.image-1 {
+  background: url(../img/mini-cream-1.png) no-repeat;
+}
+
+.image-2 {
+  background: url(../img/mini-cream-2.png) no-repeat;
+}
+
+.product__name {
+  width: 215px;
+  margin-right: 32px;
+}
+
+.product__calculate {
+  width: 110px;
+  margin-right: 12px;
+}
+
+.product__calculate b {
+  font-weight: 400;
+  color: #999999;
+}
+
+.product__cost {
+  width: 67px;
+}
+
+.form-ordering__total {
+  width: 150px;
+  margin: 18px 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.form-ordering__total::before {
+  content: "";
+  position: absolute;
+  top: 130px;
+  left: 15px;
+  width: 510px;
+  height: 1px;
+  background: #cacac7;
+}
+
+.form-ordering__button {
+  padding: 10px 15px;
+}
+
