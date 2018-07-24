@@ -60,7 +60,7 @@
               </div>
             </form>
          </li>
-          <li><a class="user-menu__item user-menu__basket user-menu__basket--filled" href="#">
+          <li><a class="user-menu__item user-menu__basket user-menu__basket--null" href="#">
             <span class="visually-hidden">Корзина</span>
             <span class="number-products"></span>
             </a>
@@ -92,5 +92,31 @@
         <span class="header__phone">8 812 450-25-25</span>
       </p>
     </header>
+    <main>
+      <section class="slider">
+        <input type="radio" name="toggle" id="btn-1" checked>
+        <input type="radio" name="toggle" id="btn-2">
+        <input type="radio" name="toggle" id="btn-3">
+        <div class="slider__controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <ul class="slider__slides">
+          <li class="slider__slide slider__slide--one">
+            <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+            <a class="slider__button button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider__slide slider__slide--two">
+            <h2>Шоколадный пломбир и лимонный сорбет</h2>
+            <a class="slider__button button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider__slide slider__slide--three">
+            <h2>Пломбир с помадкой и клубничный щербет</h2>
+            <a class="slider__button button" href="#">Давайте оба!</a> 
+          </li>
+        </ul>        
+      </section>
+    </main>
   </body>
 </html>
