@@ -588,6 +588,10 @@ img {
   cursor: pointer;
 }
 
+.slider__controls label:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
 .slider input[type="radio"] {
   display: none;
 }
