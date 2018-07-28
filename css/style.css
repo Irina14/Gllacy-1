@@ -698,8 +698,15 @@ img {
 }
 
 .hits__item {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 23.3%;
+}
+
+.hits__item:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .hits__hit {
@@ -708,6 +715,7 @@ img {
 }
 
 .hits__description {
+  order: 1;
   width: 97%;
   margin: 0 auto;
   padding: 0;
@@ -738,3 +746,26 @@ img {
 .hits__price span {
   font-size: 45px;
 } 
+
+.hits__button {
+  display: none;
+  align-self: center;
+  order: 2;
+  margin-top: 17px;
+  padding: 10px 5%;
+  font-size: 17px;
+}
+
+.hits__item:hover .hits__button,
+.hits__item:focus .hits__button {
+  display: block;
+}
+
+.hits__item:hover,
+.hits__item:focus {
+  padding: 10px 0.9% 20px 0.9%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
