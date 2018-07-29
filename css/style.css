@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -24,7 +24,7 @@
     local("Roboto Bold"), local("Roboto-Bold"),
     url("fonts/robotobold.woff2") format("woff2"), url("fonts/robotobold.woff") format("woff");
 }
-
+*/
 
 html {
   background: #f2f2f2;
@@ -592,8 +592,8 @@ img {
 .slider__description {
   position: absolute;
   top: 392px;
-  left: calc(50% - 360px);
-  width: 720px;
+  left: calc(50% - 355px);
+  width: 710px;
   margin: 0;
   padding: 0;
   font-size: 60px;
@@ -706,7 +706,7 @@ img {
   top: 647px;
   margin-bottom: 40px;
   padding: 0 2.3%;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -758,6 +758,7 @@ img {
 .hits {
   position: absolute;
   top: 915px;
+  z-index: 10;
   width: 100%;
   margin-bottom: 35px;
   padding: 0 2.3%;
@@ -860,10 +861,73 @@ img {
 
 .hits__item:hover,
 .hits__item:focus {
-  padding: 10px 0.9% 20px 0.9%;
+  padding: 10px 0.9% 12px 0.9%;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
 
+.advantages {
+  position: absolute;
+  top: 1278px;
+  margin: 0 2.3% 40px 2.3%;
+  padding: 26px 21px;
+  color: #323232;
+  background: url("../img/waffle-pattern.png");
+  border-radius: 15px;
+}
+
+.advantages__description {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  position: relative;
+  width: 48.7%;
+  padding-left: 57px;
+}
+
+.advantages__item--one,
+.advantages__item--two {
+  margin-bottom: 23px;
+}
+
+.advantages__item::before {
+  content: "";
+  top: -14px;
+  left: 0;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.advantages__item--one::before {
+  background: url("../img/сream-icon.svg") no-repeat;
+}
+
+.advantages__item--two::before {
+  background: url("../img/cow-icon.svg") no-repeat;
+}
+
+.advantages__item--three::before {
+  background: url("../img/leaf-icon.svg") no-repeat;
+}
+
+.advantages__item--four::before {
+  background: url("../img/thermometer-icon.svg") no-repeat;
 }
