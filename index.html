@@ -106,86 +106,101 @@
           <label for="btn-2"></label>
           <label for="btn-3"></label>
         </div>
-        <ul class="slider__slides">
-          <li class="slider__slide slider__slide--one">
-            <h3 class="slider__description">Крем-брюле и пломбир с малиновым джемом</h3>
-            <img class="slider__image" src="img/creams-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
-            <a class="slider__button button" href="#">Давайте оба!</a>
+        <ul class="slider__list">
+          <li class="slider__item slider__item--one slider-item">
+            <h3 class="slider-item__desc">Крем-брюле и пломбир с малиновым джемом</h3>
+            <img class="slider-item__image" src="img/creams-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
+            <a class="slider-item__button button" href="#">Давайте оба!</a>
           </li>
-          <li class="slider__slide slider__slide--two">
-            <h3 class="slider__description">Шоколадный пломбир и лимонный сорбет</h3>
-            <img class="slider__image" src="img/creams-2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
-            <a class="slider__button button" href="#">Давайте оба!</a>
+          <li class="slider__item slider__item--two slider-item">
+            <h3 class="slider-item__desc">Шоколадный пломбир и лимонный сорбет</h3>
+            <img class="slider-item__image" src="img/creams-2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
+            <a class="slider-item__button button" href="#">Давайте оба!</a>
           </li>
-          <li class="slider__slide slider__slide--three">
-            <h3 class="slider__description">Пломбир с помадкой и клубничный щербет</h3>
-            <img class="slider__image" src="img/creams-3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
-            <a class="slider__button button" href="#">Давайте оба!</a> 
+          <li class="slider__item slider__item--three slider-item">
+            <h3 class="slider-item__desc">Пломбир с помадкой и клубничный щербет</h3>
+            <img class="slider-item__image" src="img/creams-3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
+            <a class="slider-item__button button" href="#">Давайте оба!</a> 
           </li>
         </ul>        
       </section>
       <section class="banners">
         <h2 class="visually-hidden">Выгодные предложения</h2>
-        <div class="banners__banner banners__banner--one">
-          <h3>Малинка даром!</h3>
-          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="banners__button button" href="#">Хочу варенье!</a>
+        <div class="banners__banner banners__banner--one banners-banner">
+          <h3 class="banners-banner__title">Малинка даром!</h3>
+          <p class="banners-banner__desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="banners-banner__button button" href="#">Хочу варенье!</a>
         </div>
-        <div class="banners__banner banners__banner--two">
-          <h3>Шоколадки даром!</h3>
-          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class="banners__button button" href="#">Хочу шоколадки!</a>
+        <div class="banners__banner banners__banner--two banners-banner">
+          <h3 class="banners-banner__title">Шоколадки даром!</h3>
+          <p class="banners-banner__desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a class="banners-banner__button button" href="#">Хочу шоколадки!</a>
         </div> 
       </section>
       <section class="hits">
         <h2 class="visually-hidden">Хиты продаж</h2>
         <ul class="hits__list">
-          <li class="hits__item" tabindex="0">
-            <h3 class="hits__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-            <img class="hits__hit" src="img/hit.svg" width="61" height="61" alt="Хит">
-            <div class="hits__wrapper">
-              <img src="img/hit-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <p class="hits__price"><span>310 &#8381;</span>/кг</p>
+          <li class="hits__item hits-item" tabindex="0">
+            <h3 class="hits-item__desc">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+            <img class="hits-item__hit" src="img/hit.svg" width="61" height="61" alt="Хит">
+            <div class="hits-item__wrapper">
+              <img class="hits-item__image" src="img/hit-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <p class="hits-item__price"><span>310 &#8381;</span>/кг</p>
             </div>
-            <a class="hits__button button" href="#">Быстрый просмотр</a> 
+            <a class="hits-item__button button" href="#">Быстрый просмотр</a> 
           </li>
-          <li class="hits__item" tabindex="0">
-            <h3 class="hits__description">Сливочно-кофейное с кусочками шоколада</h3>
-            <img class="hits__hit" src="img/hit.svg" width="61" height="61" alt="Хит">
-            <div class="hits__wrapper">
-              <img src="img/hit-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-              <p class="hits__price"><span>380 &#8381;</span>/кг</p>
+          <li class="hits__item hits-item" tabindex="0">
+            <h3 class="hits-item__desc">Сливочно-кофейное с кусочками шоколада</h3>
+            <img class="hits-item__hit" src="img/hit.svg" width="61" height="61" alt="Хит">
+            <div class="hits-item__wrapper">
+              <img class="hits-item__image" src="img/hit-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+              <p class="hits-item__price"><span>380 &#8381;</span>/кг</p>
             </div>
-            <a class="hits__button button" href="#">Быстрый просмотр</a>  
+            <a class="hits-item__button button" href="#">Быстрый просмотр</a>  
           </li>
-          <li class="hits__item" tabindex="0">
-            <h3 class="hits__description">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-            <img class="hits__hit" src="img/hit.svg" width="61" height="61" alt="Хит">
-            <div class="hits__wrapper">
-              <img src="img/hit-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              <p class="hits__price"><span>355 &#8381;</span>/кг</p>
+          <li class="hits__item hits-item" tabindex="0">
+            <h3 class="hits-item__desc">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            <img class="hits-item__hit" src="img/hit.svg" width="61" height="61" alt="Хит">
+            <div class="hits-item__wrapper">
+              <img class="hits-item__image" src="img/hit-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <p class="hits-item__price"><span>355 &#8381;</span>/кг</p>
             </div>
-            <a class="hits__button button" href="#">Быстрый просмотр</a>   
+            <a class="hits-item__button button" href="#">Быстрый просмотр</a>   
           </li>
-          <li class="hits__item" tabindex="0">
-            <h3 class="hits__description">Сливочное крем-брюле с карамельной подливкой</h3>
-            <img class="hits__hit" src="img/hit.svg" width="61" height="61" alt="Хит">
-            <div class="hits__wrapper">
-              <img src="img/hit-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-              <p class="hits__price"><span>415 &#8381;</span>/кг</p>
+          <li class="hits__item hits-item" tabindex="0">
+            <h3 class="hits-item__desc">Сливочное крем-брюле с карамельной подливкой</h3>
+            <img class="hits-item__hit" src="img/hit.svg" width="61" height="61" alt="Хит">
+            <div class="hits-item__wrapper">
+              <img class="hits-item__image" src="img/hit-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+              <p class="hits-item__price"><span>415 &#8381;</span>/кг</p>
             </div>
-            <a class="hits__button button" href="#">Быстрый просмотр</a> 
+            <a class="hits-item__button button" href="#">Быстрый просмотр</a> 
           </li>
         </ul>
       </section>
       <section class="advantages">
-        <h2 class="advantages__description">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+        <h2 class="advantages__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--one">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
           <li class="advantages__item advantages__item--two">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
           <li class="advantages__item advantages__item--three">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
           <li class="advantages__item advantages__item--four">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
         </ul> 
+      </section>
+      <section class="news">
+        <h2 class="visually-hidden">Новости</h2>
+        <div class="news__blog news-blog">
+          <p class="news-blog__text">Новое в нашем блоге</p>
+          <h3 class="news-blog__title"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>  
+        </div>
+        <div class="news__posting news-posting">
+          <p class="news-posting__decs">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form class="news-posting__form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="email-posting-field">Электронная почта</label>
+            <input type="email" name="email-posting" id="email-posting-field" placeholder="Электронная почта" required>
+            <button class="button news-posting__button" type="submit">Отправить</button>
+          </form>
+        </div> 
       </section>
 
     </main>
