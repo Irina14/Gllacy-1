@@ -932,3 +932,50 @@ img {
 .advantages__item--four::before {
   background: url("../img/thermometer-icon.svg") no-repeat;
 }
+
+.news {
+  position: absolute;
+  top: 1624px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.3%;
+}
+
+.news__item {
+  width: 48.87%;
+  min-height: 220px;
+  padding: 22px 20px;
+  border-radius: 15px;
+}
+
+.news__blog {
+  color: #323232;
+  background: #ffffff url("../img/background-strawberry.jpg") no-repeat -53px -225px;
+}
+
+.news-blog__text {
+  width: 54%;
+  margin: 0;
+  margin-bottom: 6px;
+  padding: 0;
+  font-weight: 500; 
+}
+
+.news-blog__title {
+  width: 54%;
+  margin: 0;
+  padding: 0;
+}
+
+.news-blog__title a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #323232;
+} 
+
+.news__posting {
+  color: #5a5a5a;
+  background-color: #f8f7f4;
+}
