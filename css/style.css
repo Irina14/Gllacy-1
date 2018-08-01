@@ -347,7 +347,6 @@ img {
 .form input {
   padding: 9px 13px;
   font: inherit;
-  line-height: 24px;
   color: #323232;
   background: #ffffff;
   border: 1px solid #d3d3d2;
@@ -689,8 +688,20 @@ img {
   display: block;
 }
 
+.background-1 {
+  background: #849d8f;
+}
 
-#btn-1:checked ~ .slider__list {
+.background-2 {
+  background: #8996a6;
+}
+
+.background-3 {
+  background: #9d8b84;
+}
+
+
+/*#btn-1:checked ~ .slider__list {
   background: #849d8f;
 } 
 
@@ -700,7 +711,7 @@ img {
 
 #btn-3:checked ~ .slider__list {
   background: #9d8b84;
-} 
+} */
 
 .slider__list::before,
 .slider__list::after {
@@ -958,7 +969,7 @@ img {
   position: relative;
   top: -1137px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0 2.3%;
 }
 
@@ -997,6 +1008,7 @@ img {
 } 
 
 .news__posting {
+  margin-left: auto;
   padding: 5px;
   color: #5a5a5a;
   background-color: #f8f7f4;
