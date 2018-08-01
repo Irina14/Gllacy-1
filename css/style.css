@@ -890,8 +890,8 @@ img {
 }
 
 .advantages {
-  position: absolute;
-  top: 1278px;
+  position: relative;
+  top: -1137px;
   width: 95.4%;
   margin: 0 2.3% 40px 2.3%;
   padding: 26px 21px;
@@ -955,8 +955,8 @@ img {
 }
 
 .news {
-  position: absolute;
-  top: 1624px;
+  position: relative;
+  top: -1137px;
   display: flex;
   justify-content: space-between;
   padding: 0 2.3%;
