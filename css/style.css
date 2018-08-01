@@ -339,25 +339,42 @@ img {
   margin-left: 30px;
 }
 
+.form {
+  background: #f8f7f4;
+  border-radius: 5px;
+}
+
+.form input {
+  padding: 9px 13px;
+  font: inherit;
+  line-height: 24px;
+  color: #323232;
+  background: #ffffff;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.form input:hover {
+  padding: 8px 14px;
+  border: 2px solid #c7c6c5;
+}
+
+.form input:focus {
+  padding: 8px 14px;
+  border: 2px solid #8fbdec;
+  outline: none;
+}
+
 .user-menu__form {
   position: absolute;
   z-index: 10;
   display: none;
-  background: #f8f7f4;
-  border-radius: 5px;
   -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
           box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 } 
 
 .user-menu__form input {
-  padding: 9px 15px;
-  font: inherit;
   font-size: 14px;
-  line-height: 24px;
-  color: #999999;
-  background: #ffffff;
-  border: 1px solid #d3d3d2;
-  border-radius: 5px;
 }
 
 .form-search {
@@ -371,19 +388,23 @@ img {
   width: 311px; 
 }
 
-.user-menu__form input::-webkit-input-placeholder {
+.form input::-webkit-input-placeholder {
+  font-weight: 400;
   color: #999999;
 }
 
-.user-menu__form input:-ms-input-placeholder {
+.form input:-ms-input-placeholder {
+  font-weight: 400;
   color: #999999;
 }
 
-.user-menu__form input::-ms-input-placeholder {
+.form input::-ms-input-placeholder {
+  font-weight: 400;
   color: #999999;
 }
 
-.user-menu__form input::placeholder {
+.form input::placeholder {
+  font-weight: 400;
   color: #999999;
 }
 
@@ -944,11 +965,11 @@ img {
 .news__item {
   width: 48.87%;
   min-height: 220px;
-  padding: 22px 20px;
   border-radius: 15px;
 }
 
 .news__blog {
+  padding: 22px 20px;
   color: #323232;
   background: #ffffff url("../img/background-strawberry.jpg") no-repeat -53px -225px;
 }
@@ -976,6 +997,36 @@ img {
 } 
 
 .news__posting {
+  padding: 5px;
   color: #5a5a5a;
   background-color: #f8f7f4;
+  background-image: repeating-linear-gradient(135deg, #f8f7f4 0px, #f8f7f4 8px, #92cdff 8px, #92cdff 16px, #f8f7f4 16px, #f8f7f4 24px, #fe9e90 24px, #fe9e90 32px);
+}
+
+.news-posting__wrapper {
+  height: 100%;
+  padding: 30px 20px 35px 20px;
+  background-color: #f8f7f4;
+  border-radius: 15px;
+}
+
+.news-posting__decs {
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+}
+
+.news-posting__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-posting__form input {
+  width: 72.5%;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.news-posting__button {
+  padding: 10px 18px;
 }

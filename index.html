@@ -35,7 +35,7 @@
               <path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
               </svg>
             </a>
-            <form class="user-menu__form form-search" action="https://echo.htmlacademy.ru" method="get">
+            <form class="user-menu__form form-search form" action="https://echo.htmlacademy.ru" method="get">
               <label class="visually-hidden" for="search-field">Что ищем?</label>
               <input type="text" name="search" id="search-field" placeholder="Что ищем?">
             </form>
@@ -48,7 +48,7 @@
               </svg>
               Вход
             </a>
-            <form class="user-menu__form form-input" action="https://echo.htmlacademy.ru" method="post">
+            <form class="user-menu__form form-input form" action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="email-field">Электронная почта</label>
               <input type="email" name="email" id="email-field" placeholder="Электронная почта" required>
               <label class="visually-hidden" for="password-field">Пароль</label>
@@ -194,12 +194,14 @@
           <h3 class="news-blog__title"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>  
         </div>
         <div class="news__item news__posting news-posting">
-          <p class="news-posting__decs">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class="news-posting__form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="email-posting-field">Электронная почта</label>
-            <input type="email" name="email-posting" id="email-posting-field" placeholder="Электронная почта" required>
-            <button class="button news-posting__button" type="submit">Отправить</button>
-          </form>
+          <div class="news-posting__wrapper">
+            <p class="news-posting__decs">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form class="news-posting__form form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="email-posting-field">Электронная почта</label>
+              <input type="email" name="email-posting" id="email-posting-field" placeholder="Электронная почта" required>
+              <button class="button news-posting__button" type="submit">Отправить</button>
+            </form>
+          </div>
         </div> 
       </section>
 
