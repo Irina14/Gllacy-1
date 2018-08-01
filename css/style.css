@@ -647,7 +647,6 @@ img {
 
 .slider__item {
   display: none;
-  min-height: 2416px;
 }
 
 .slider__controls {
@@ -700,42 +699,15 @@ img {
   background: #9d8b84;
 }
 
-
-/*#btn-1:checked ~ .slider__list {
-  background: #849d8f;
-} 
-
-#btn-2:checked ~ .slider__list {
-  background: #8996a6;
-}
-
-#btn-3:checked ~ .slider__list {
-  background: #9d8b84;
-} */
-
-.slider__list::before,
-.slider__list::after {
-  content: "";
-  visibility: hidden;
-}
-
-.slider__list::before {
-  background: url(../img/background-2.jpg);
-}
-
-.slider__list::after {
-  background: url(../img/background-3.jpg);
-}
-
 .banners {
+  position: absolute;
+  top: 647px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
      -ms-flex-pack: start;
    justify-content: flex-start;
-  position: absolute;
-  top: 647px;
   margin-bottom: 40px;
   padding: 0 2.3%;
   font-size: 18px;
@@ -792,17 +764,13 @@ img {
   top: 915px;
   z-index: 10;
   width: 100%;
-  margin-bottom: 35px;
-  padding: 0 2.3%;
+  padding: 0 1.15%;
 }
 
 .hits__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-     -ms-flex-pack: justify;
-   justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
@@ -819,7 +787,8 @@ img {
      -ms-flex-direction: column;
          flex-direction: column;
   position: relative;
-  width: 23.3%;
+  width: 25%;
+  padding: 10px 1.15%;
 }
 
 .hits__item:focus {
@@ -893,7 +862,7 @@ img {
 
 .hits__item:hover,
 .hits__item:focus {
-  padding: 10px 0.9% 10px 0.9%;
+  padding: 10px 1.15%;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -901,10 +870,8 @@ img {
 }
 
 .advantages {
-  position: relative;
-  top: -1137px;
   width: 95.4%;
-  margin: 0 2.3% 40px 2.3%;
+  margin: 455px 2.3% 40px 2.3%;
   padding: 26px 21px;
   color: #323232;
   background: url("../img/waffle-pattern.png");
@@ -966,10 +933,9 @@ img {
 }
 
 .news {
-  position: relative;
-  top: -1137px;
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 40px;
   padding: 0 2.3%;
 }
 
