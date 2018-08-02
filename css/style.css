@@ -48,7 +48,7 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
-  background: #849d8f;
+  background: #849d8f url("../img/lighting-1.png") no-repeat;
 }
 
 a {
@@ -624,6 +624,7 @@ img {
 
 .slider-item__image {
   margin: 0 auto;
+  padding-top: 83px;
 }
 
 .slider-item__button {
@@ -688,15 +689,15 @@ img {
 }
 
 .background-1 {
-  background: #849d8f;
+  background: #849d8f url("../img/lighting-1.png") no-repeat;
 }
 
 .background-2 {
-  background: #8996a6;
+  background: #8996a6 url("../img/lighting-2.png") no-repeat;
 }
 
 .background-3 {
-  background: #9d8b84;
+  background: #9d8b84 url("../img/lighting-3.png") no-repeat;
 }
 
 .banners {
