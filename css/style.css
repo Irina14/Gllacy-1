@@ -1010,3 +1010,49 @@ img {
 .news-posting__button {
   padding: 10px 18px;
 }
+
+.map {
+  position: relative;
+  height: 430px;
+  margin-bottom: 6px;
+  background: 
+    url("../img/pin.svg") no-repeat 266px 140px,
+    url("../img/map.png") no-repeat 0 -108px; 
+}
+
+.map__contacts {
+  position: absolute;
+  top: 62px;
+  right: 2.3%;
+  width: 302px;
+  padding: 28px 26px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+  background: #fefefe;
+  border-radius: 15px;
+}
+
+.map__contacts span {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+} 
+
+.map-contacts___address,
+.map-contacts___feedback {
+  margin: 0;
+  padding: 0;
+}
+
+.map-contacts___address {
+  margin-bottom: 18px;
+}
+
+.map-contacts___feedback {
+  margin-bottom: 25px;
+}
+
+.map-contacts__button {
+  padding: 11px 26px;
+}
