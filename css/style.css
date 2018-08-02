@@ -623,8 +623,9 @@ img {
 }
 
 .slider-item__image {
+  width: 647px;
+  height: 584px;
   margin: 0 auto;
-  padding-top: 83px;
 }
 
 .slider-item__button {
@@ -648,6 +649,7 @@ img {
 
 .slider__item {
   display: none;
+  padding-top: 83px;
 }
 
 .slider__controls {
