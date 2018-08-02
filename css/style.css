@@ -761,10 +761,9 @@ img {
 }
 
 .hits {
-  position: absolute;
-  top: 915px;
-  z-index: 10;
   width: 100%;
+  min-height: 400px;
+  margin-top: 245px;
   padding: 0 1.15%;
 }
 
@@ -852,7 +851,7 @@ img {
              -ms-flex-order: 2;
                       order: 2;
   margin-top: 12px;
-  padding: 6px 5%;
+  padding: 6px 15px;
   font-size: 17px;
 }
 
@@ -872,7 +871,7 @@ img {
 
 .advantages {
   width: 95.4%;
-  margin: 455px 2.3% 40px 2.3%;
+  margin: 0 2.3% 40px 2.3%;
   padding: 26px 21px;
   color: #323232;
   background: url("../img/waffle-pattern.png");
