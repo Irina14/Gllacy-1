@@ -69,14 +69,14 @@
             <div class="user-menu__form form-ordering">
               <div class="form-ordering__wrapper">
                 <p class="product">
-                  <button class="product__close" type="button"><span class="visually-hidden">Убрать</span></button>
+                  <button class="product__close close" type="button"><span class="visually-hidden">Убрать</span></button>
                   <span class="product__image image-1"></span>
                   <span class="product__name">Пломбир с апельсиновым джемом</span>
                   <span class="product__calculate">1,5 кг х <b>200 руб.</b></span>
                   <span class="product__cost">300 руб.</span>
                 </p>
                 <p class="product">
-                  <button class="product__close" type="button"><span class="visually-hidden">Убрать</span></button>
+                  <button class="product__close close" type="button"><span class="visually-hidden">Убрать</span></button>
                   <span class="product__image image-2"></span>
                   <span class="product__name">Клубничный пломбир с присыпкой из белого шоколада</span>
                   <span class="product__calculate">1,5 кг х <b>300 руб.</b></span>
@@ -206,7 +206,7 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBuo6GrcCD" width="100%" height="430" frameborder="0" allowfullscreen="true"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBuo6GrcCD" width="100%" height="430" allowfullscreen="true"></iframe>
         <div class="map__contacts map-contacts">
           <p class="map-contacts___address">Адрес главного офиса<br> и офлайн-магазина:<br> <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
           <p class="map-contacts___feedback">Для заказов по телефону:<br> <span>8 812 450-25-25</span><br> (с 10 до 20 ежедневно)</p>
@@ -216,15 +216,15 @@
       <section class="modal">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="modal__feedback form" action="https://echo.htmlacademy.ru" method="post">
-          <p>Мы обязательно вам ответим!</p>
+          <p class="modal__text">Мы обязательно вам ответим!</p>
           <label class="visually-hidden" for="name-field">Имя</label>
           <input type="text" name="name" id="name-field" placeholder="Как вас зовут?">
           <label class="visually-hidden" for="email-feedback-field">Почта</label>
           <input type="email" name="email-feedback" id="email-feedback-field" placeholder="Ваша почта для ответа?">
           <label class="visually-hidden" for="text-field">Текст</label>
-          <textarea name="text" id="text-field" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+          <textarea name="text" id="text-field" placeholder="Напишите что-нибудь..."></textarea>
           <button class="modal__button button" type="submit">Отправить</button>
-          <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+          <button class="modal__close close" type="button"><span class="visually-hidden">Закрыть</span></button>
         </form> 
       </section>
     </main>
