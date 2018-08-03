@@ -357,14 +357,13 @@ img {
 
 .form input:hover,
 .form textarea:hover {
-  padding: 8px 14px;
-  border: 2px solid #c7c6c5;
+  box-shadow: inset 0 0 0 1px #c7c6c5;
 }
 
 .form input:focus,
 .form textarea:focus {
-  padding: 8px 14px;
-  border: 2px solid #8fbdec;
+  border: 1px solid #8fbdec;
+  box-shadow: inset 0 0 0 1px #8fbdec;
   outline: none;
 }
 
@@ -1067,6 +1066,7 @@ img {
 }
 
 .modal {
+  display: none;
   position: absolute;
   top: 338px;
   z-index: 4;
@@ -1122,6 +1122,7 @@ img {
 }
 
 .modal__overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
