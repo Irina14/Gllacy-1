@@ -357,13 +357,15 @@ img {
 
 .form input:hover,
 .form textarea:hover {
-  box-shadow: inset 0 0 0 1px #c7c6c5;
+  -webkit-box-shadow: inset 0 0 0 1px #c7c6c5;
+          box-shadow: inset 0 0 0 1px #c7c6c5;
 }
 
 .form input:focus,
 .form textarea:focus {
   border: 1px solid #8fbdec;
-  box-shadow: inset 0 0 0 1px #8fbdec;
+  -webkit-box-shadow: inset 0 0 0 1px #8fbdec;
+          box-shadow: inset 0 0 0 1px #8fbdec;
   outline: none;
 }
 
