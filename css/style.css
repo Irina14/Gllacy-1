@@ -1142,14 +1142,15 @@ img {
   padding: 27px 2.3%;
 }
 
-.footer__item {
+.footer__social,
+.footer__info {
   display: flex;
   flex-wrap: wrap;
-  width: 267px;
 }
 
-.footer__info {
-  width: 310px;
+.footer__social, 
+.footer__copyright {  
+  width: 267px;
 }
 
 .social__link {
@@ -1177,7 +1178,7 @@ img {
 }
 
 .footer__social li {
-  margin-right: 11px;
+  margin: 3px 11px 3px 0;
 }
 
 .footer ul {
@@ -1186,21 +1187,23 @@ img {
   list-style: none;
 }
 
-.footer__copyright {
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
+.footer__info {
+  width: 310px;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .footer-info__link {
-  font-size: 13px;
-  line-height: 18px;
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer-info__one {
   font-weight: bold;
+}
+
+.footer__info li {
+  margin-bottom: 4px;
 }
 
 .footer__info li:nth-child(2n) {
@@ -1219,8 +1222,45 @@ img {
   content: "";
   position: absolute;
   left: -20px;
-  top: 5px;
+  top: 2px;
   width: 15px;
   height: 13px;
   background: url("../img/heart.svg") no-repeat;
+}
+
+.footer__copyright {
+  position: relative;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fefefe;
+  text-align: right;
+}
+
+.copyright__link {
+  color: #fefefe;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.link:hover,
+.link:focus,
+.ink:active {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.2);
+}
+
+.copyright__logo {
+  position: absolute;
+  top: -44px;
+  right: 80px;
+  width: 108px;
+  height: 39px;
+}
+
+.copyright__logo:hover path,
+.copyright__logo:focus path,
+.copyright__logo:active path {
+  fill: #ffbc9e;
 }
