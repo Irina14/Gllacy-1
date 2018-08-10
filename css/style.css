@@ -498,7 +498,7 @@ img {
   color: #323232;
 }
 
-.form-ordering__wrapper {
+.form-ordering table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -576,9 +576,6 @@ img {
   margin-right: 14px;
 }
 
-.image-1 {
-  background: url(../img/mini-cream-1.png) no-repeat;
-}
 
 .image-2 {
   background: url(../img/mini-cream-2.png) no-repeat;
@@ -594,7 +591,7 @@ img {
   margin-right: 12px;
 }
 
-.product__calculate b {
+.product__calculate span {
   font-weight: 400;
   color: #999999;
 }

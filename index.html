@@ -67,24 +67,32 @@
             <span class="number-products"></span>
             </a>
             <div class="user-menu__form form-ordering">
-              <div class="form-ordering__wrapper">
-                <p class="product">
-                  <button class="product__close close" type="button"><span class="visually-hidden">Убрать</span></button>
-                  <span class="product__image image-1"></span>
-                  <span class="product__name">Пломбир с апельсиновым джемом</span>
-                  <span class="product__calculate">1,5 кг х <b>200 руб.</b></span>
-                  <span class="product__cost">300 руб.</span>
-                </p>
-                <p class="product">
-                  <button class="product__close close" type="button"><span class="visually-hidden">Убрать</span></button>
-                  <span class="product__image image-2"></span>
-                  <span class="product__name">Клубничный пломбир с присыпкой из белого шоколада</span>
-                  <span class="product__calculate">1,5 кг х <b>300 руб.</b></span>
-                  <span class="product__cost">450 руб.</span>
-                </p> 
-                <p class="form-ordering__total">Итого: 750 руб.</p>
-                <button class="button form-ordering__button" type="submit">Оформить заказ</button>
-              </div>
+              <table>
+                <tr class="product">
+                  <td>
+                    <button class="product__close close" type="button"><span class="visually-hidden">Убрать</span></button>
+                  </td>
+                  <td class="product__image">
+                    <img src="mini-cream-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                  </td>
+                  <td class="product__name">Пломбир с апельсиновым джемом</td>
+                  <td class="product__calculate">1,5 кг х <span>200 руб.</span></td>
+                  <td class="product__cost">300 руб.</td>
+                </tr>
+                <tr class="product">
+                  <td>
+                    <button class="product__close close" type="button"><span class="visually-hidden">Убрать</span></button>
+                  </td>
+                  <td class="product__image">
+                    <img src="mini-cream-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  </td>
+                  <td class="product__name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="product__calculate">1,5 кг х <span>300 руб.</span></td>
+                  <td class="product__cost">450 руб.</td>
+                </tr> 
+                <tr class="form-ordering__total">Итого: 750 руб.</tr> 
+              </table>
+              <button class="button form-ordering__button" type="submit">Оформить заказ</button>
             </div>
           </div>
         </div>
