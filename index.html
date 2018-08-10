@@ -14,7 +14,7 @@
         <img src="img/logo.svg" width="154" height="64" alt="Логотип">
       </a> 
       <nav class="header__menu">
-        <ul class="header__list site-menu">
+        <ul class="header__item site-menu">
           <li><a class="site-menu__item" href="#">Каталог</a>
             <ul class="sub-menu">
               <li><a class="sub-menu__item sub-menu__item--new">Новинки</a></li>
@@ -27,8 +27,8 @@
           <li><a class="site-menu__item" href="#">Доставка и оплата</a></li>
           <li><a class="site-menu__item" href="#">О Компании</a></li>
         </ul>
-        <ul class="header__list user-menu">
-          <li>
+        <div class="header__item user-menu">
+          <div>
             <a class="user-menu__item user-menu__search" href="#">
               <span class="visually-hidden">Поиск</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" fill="#FFF">
@@ -39,8 +39,8 @@
               <label class="visually-hidden" for="search-field">Что ищем?</label>
               <input type="text" name="search" id="search-field" placeholder="Что ищем?">
             </form>
-          </li>
-          <li>
+          </div>
+          <div>
             <a class="user-menu__item user-menu__input" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" fill="#FFF">
                 <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
@@ -61,8 +61,8 @@
                 </p>
               </div>
             </form>
-         </li>
-          <li><a class="user-menu__item user-menu__basket user-menu__basket--null" href="#">
+          </div>
+          <div><a class="user-menu__item user-menu__basket user-menu__basket--filled" href="#">
             <span class="visually-hidden">Корзина</span>
             <span class="number-products"></span>
             </a>
@@ -86,8 +86,8 @@
                 <button class="button form-ordering__button" type="submit">Оформить заказ</button>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </nav>
       <p class="header__contacts">
         С 10 до 20, ежедневно

@@ -100,15 +100,12 @@ img {
   width: 87%;
 }
 
-.header__list {
+.header__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .site-menu__item,
@@ -135,13 +132,16 @@ img {
   white-space: nowrap;
 }
 
-.user-menu li:not(:last-child) {
+.user-menu div:not(:last-child) {
   margin-right: 10px;
 }
 
 .site-menu {
   position: relative;
   width: 56%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .site-menu__item {
@@ -267,7 +267,7 @@ img {
 }
 
 .user-menu__item,
-.user-menu li {
+.user-menu div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
