@@ -953,7 +953,7 @@ img {
   background: url("../img/thermometer-icon.svg") no-repeat;
 }
 
-.news {
+.content__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -964,19 +964,20 @@ img {
   padding: 0 2.3%;
 }
 
-.news__item {
+.blog,
+.posting {
   width: 48.87%;
   min-height: 220px;
   border-radius: 15px;
 }
 
-.news__blog {
+.blog {
   padding: 22px 20px;
   color: #323232;
   background: #ffffff url("../img/background-strawberry.jpg") no-repeat -53px -225px;
 }
 
-.news-blog__title {
+.blog__title {
   width: 54%;
   margin: 0;
   margin-bottom: 6px;
@@ -986,13 +987,13 @@ img {
   font-weight: 500; 
 }
 
-.news-blog__subtitle {
+.blog__subtitle {
   width: 54%;
   margin: 0;
   padding: 0;
 }
 
-.news-blog__subtitle a {
+.blog__subtitle a {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -1000,7 +1001,7 @@ img {
   color: #323232;
 } 
 
-.news__posting {
+.posting {
   margin-left: auto;
   padding: 5px;
   color: #5a5a5a;
@@ -1010,20 +1011,20 @@ img {
   background-image: repeating-linear-gradient(135deg, #f8f7f4 0px, #f8f7f4 8px, #92cdff 8px, #92cdff 16px, #f8f7f4 16px, #f8f7f4 24px, #fe9e90 24px, #fe9e90 32px);
 }
 
-.news-posting__wrapper {
+.posting__wrapper {
   height: 100%;
   padding: 30px 20px 35px 20px;
   background-color: #f8f7f4;
   border-radius: 15px;
 }
 
-.news-posting__decs {
+.posting__decs {
   margin: 0;
   margin-bottom: 37px;
   padding: 0;
 }
 
-.news-posting__form {
+.posting__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1032,7 +1033,7 @@ img {
    justify-content: space-between;
 }
 
-.news-posting__form input {
+.posting__form input {
   width: 72.5%;
   margin-right: 8px;
 }
