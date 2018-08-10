@@ -494,10 +494,11 @@ img {
 .form-ordering {
   top: 57px;
   right: 27px;
-  padding: 20px 14px 20px 20px;
+  padding: 10px 14px 20px 20px;
   color: #323232;
 }
 
+.form-ordering__wrapper,
 .form-ordering table {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,25 +509,25 @@ img {
          flex-direction: column;
 }
 
-.form-ordering__total,
 .form-ordering__button {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
+.form-ordering table {
+  border-collapse: collapse;
+  margin-bottom: 8px;
+}
+
+.form-ordering td {
+  height: 53px;
+  vertical-align: middle;
+} 
+ 
 .product {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-     -ms-flex-align: center;
-        align-items: center;
-  margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
   font-size: 13px;
   line-height: 16px;
-}
+} 
 
 .close {
   background: none;
@@ -557,38 +558,37 @@ img {
 }
 
 .product__close {
+  width: 20px;
+}
+
+.product__button {
   position: relative;
   width: 11px;
   height: 11px;
-  margin-right: 9px;
 }
 
-.product__close::before,
-.product__close::after {
+.product__button::before,
+.product__button::after {
   right: 0px;
   width: 13px;
   height: 1px;
 }
 
 .product__image {
-  width: 33px;
-  height: 33px;
-  margin-right: 14px;
+  width: 47px;
 }
 
-
-.image-2 {
-  background: url(../img/mini-cream-2.png) no-repeat;
+.product__image img {
+  width: 33px;
+  height: 33px;
 }
 
 .product__name {
-  width: 215px;
-  margin-right: 32px;
+  width: 247px;
 }
 
 .product__calculate {
-  width: 110px;
-  margin-right: 12px;
+  width: 120px;
 }
 
 .product__calculate span {
@@ -597,16 +597,17 @@ img {
 }
 
 .product__cost {
-  width: 67px;
+  width: 68px;
 }
 
 .form-ordering__total {
-  width: 150px;
-  margin: 18px 0;
-  padding: 0;
   font-size: 15px;
   line-height: 18px;
   font-weight: 700;
+}
+
+.form-ordering__total td {
+  padding-top: 20px;
   text-align: right;
 }
 
