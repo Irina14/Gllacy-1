@@ -15,21 +15,21 @@
       </a> 
       <nav class="header__menu">
         <ul class="header__item site-menu">
-          <li><a class="site-menu__item" href="#">Каталог</a>
+          <li><a class="site-menu__link" href="#">Каталог</a>
             <ul class="sub-menu">
-              <li><a class="sub-menu__item sub-menu__item--new">Новинки</a></li>
-              <li><a class="sub-menu__item" href="inner.html">Сливочное</a></li>
-              <li><a class="sub-menu__item" href="#">Щербеты</a></li>
-              <li><a class="sub-menu__item" href="#">Фруктовый лёд</a></li>
-              <li><a class="sub-menu__item" href="#">Мелорин</a></li>
+              <li><a class="sub-menu__link sub-menu__link--new">Новинки</a></li>
+              <li><a class="sub-menu__link" href="inner.html">Сливочное</a></li>
+              <li><a class="sub-menu__link" href="#">Щербеты</a></li>
+              <li><a class="sub-menu__link" href="#">Фруктовый лёд</a></li>
+              <li><a class="sub-menu__link" href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li><a class="site-menu__item" href="#">Доставка и оплата</a></li>
-          <li><a class="site-menu__item" href="#">О Компании</a></li>
+          <li><a class="site-menu__link" href="#">Доставка и оплата</a></li>
+          <li><a class="site-menu__link" href="#">О Компании</a></li>
         </ul>
         <div class="header__item user-menu">
-          <div>
-            <a class="user-menu__item user-menu__search" href="#">
+          <div class="user-menu__item">
+            <a class="user-menu__link user-menu__search" href="#">
               <span class="visually-hidden">Поиск</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" fill="#FFF">
               <path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
@@ -40,8 +40,8 @@
               <input type="text" name="search" id="search-field" placeholder="Что ищем?">
             </form>
           </div>
-          <div>
-            <a class="user-menu__item user-menu__input" href="#">
+          <div class="user-menu__item">
+            <a class="user-menu__link user-menu__input" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" fill="#FFF">
                 <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
                 <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
@@ -62,9 +62,10 @@
               </div>
             </form>
           </div>
-          <div><a class="user-menu__item user-menu__basket user-menu__basket--null" href="#">
-            <span class="visually-hidden">Корзина</span>
-            <span class="number-products"></span>
+          <div class="user-menu__item">
+            <a class="user-menu__link user-menu__basket user-menu__basket--filled" href="#">
+              <span class="visually-hidden">Корзина</span>
+              <span class="number-products"></span>
             </a>
             <div class="user-menu__form form-ordering form">
               <div class="form-ordering__wrapper">
@@ -74,7 +75,7 @@
                     <button class="product__button close" type="button"><span class="visually-hidden">Убрать</span></button>
                   </td>
                   <td class="product__image">
-                    <img src="img/mini-cream-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                    <img src="img/mini-cream-1.png" width="33" height="33" alt="Пломбир">
                   </td>
                   <td class="product__name">Пломбир с апельсиновым джемом</td>
                   <td class="product__calculate">1,5 кг х <span>200 руб.</span></td>
@@ -85,7 +86,7 @@
                     <button class="product__button close" type="button"><span class="visually-hidden">Убрать</span></button>
                   </td>
                   <td class="product__image">
-                    <img src="img/mini-cream-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                    <img src="img/mini-cream-2.png" width="33" height="33" alt="Пломбир">
                   </td>
                   <td class="product__name">Клубничный пломбир с присыпкой из белого шоколада</td>
                   <td class="product__calculate">1,5 кг х <span>300 руб.</span></td>
