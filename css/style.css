@@ -48,7 +48,7 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
-  background: #849d8f url("../img/lighting-1.png") no-repeat center top;
+  background: #849d8f;
 }
 
 a {
@@ -627,11 +627,17 @@ img {
   background: #cacac7;
 }
 
+.slider__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .slider-item__desc {
   position: relative;
   z-index: 1;
   width: 710px;
-  margin: 390px auto 30px auto;
+  margin: 390px 0 30px 0;
   padding: 0;
   font-size: 60px;
   line-height: 60.35px;
@@ -641,25 +647,16 @@ img {
 
 .slider-item__image {
   position: absolute;
-  top: 84px;
-  left: calc(50% - 324px);
+  top: 0;
   z-index: 0;
-  width: 647px;
-  height: 584px;
 }
 
 .slider-item__button {
-  display: block;
   position: relative;
   z-index: 1;
-  width: 280px;
-  height: 63px;
-  margin: 0 auto 42px auto;
-  padding: 0;
+  margin-bottom: 42px;
+  padding: 20px 40px;
   font-size: 32px;
-  line-height: 63px;
-  text-align: center;
-  vertical-align: middle;
 }
 
 .slider__list {
@@ -677,6 +674,7 @@ img {
   position: absolute;
   top: 563px;
   left: 2.3%;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -712,15 +710,15 @@ img {
 }
 
 .background-1 {
-  background: #849d8f url("../img/lighting-1.png") no-repeat center top;
+  background: #849d8f;
 }
 
 .background-2 {
-  background: #8996a6 url("../img/lighting-2.png") no-repeat center top;
+  background: #8996a6;
 }
 
 .background-3 {
-  background: #9d8b84 url("../img/lighting-3.png") no-repeat center top;
+  background: #9d8b84;
 }
 
 .banners {
