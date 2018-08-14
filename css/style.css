@@ -781,9 +781,11 @@ img {
 }
 
 .hits {
+  position: relative;
   width: 100%;
-  min-height: 400px;
+  min-height: 332px;
   padding: 0 1.15%;
+  margin-bottom: 40px;
 }
 
 .hits__list {
@@ -792,6 +794,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+ /* position: absolute;*/
   margin: 0;
   padding: 0;
   list-style: none;
@@ -806,6 +809,7 @@ img {
      -ms-flex-direction: column;
          flex-direction: column;
   position: relative;
+  z-index: 1;
   width: 25%;
   padding: 10px 1.15%;
 }
