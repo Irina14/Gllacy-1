@@ -320,7 +320,7 @@ img {
 }
 
 .user-menu__basket {
-  padding: 7px 17px;
+  padding: 7px 15px;
   border-radius: 20px;
 }
 
@@ -1330,3 +1330,35 @@ img {
 .copyright__logo:active path {
   fill: #ffbc9e;
 }
+
+.main__catalog {
+  display: block;
+  padding: 0 2.3%;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  padding-top: 98px;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  margin-right: 8px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadcrumbs a {
+  margin-right: 4px;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
