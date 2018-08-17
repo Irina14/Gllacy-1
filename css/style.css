@@ -1347,18 +1347,36 @@ img {
 }
 
 .breadcrumbs li {
+  position: relative;
   margin-right: 8px;
+  padding-right: 14px;
   font-size: 14px;
   line-height: 16px;
 }
 
 .breadcrumbs a {
-  margin-right: 4px;
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .breadcrumbs li:last-child {
   margin-right: 0;
+}
+
+.breadcrumbs li:not(:last-child)::before {
+  content: "»";
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 6px;
+  height: 6px;
+}
+
+.main__title {
+  margin: 5px 0 25px 0;
+  padding: 0;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
 }
 
