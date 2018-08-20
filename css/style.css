@@ -1455,7 +1455,7 @@ img {
 }
 
 .filter-form__price input {
-  width: 25px;
+  width: 26px;
   background: transparent;
   border: none;
 }
@@ -1499,3 +1499,62 @@ img {
   color: #ffffff;
 }
 
+.form-price__bar {
+  position: relative;
+}
+
+.price-bar__scale::before,
+.price-bar__scale::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  height: 4px;
+}
+
+.price-bar__scale::before {
+  left: 21px;
+  width: 176px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.price-bar__scale::after {
+  left: 54px;
+  width: 78px;
+  background: #ffffff;
+}
+
+.price-bar__control {
+  position: absolute;
+  top: 8px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.price-bar__control::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.price-bar__control--min {
+  left: 35px;
+}
+
+.price-bar__control--max {
+  left: 132px;
+}
+
+.price-bar__control:hover::before,
+.price-bar__control:focus::before {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
