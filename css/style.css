@@ -1405,6 +1405,12 @@ img {
   flex-wrap: wrap;
 }
 
+.filter-form__background {
+  height: 36px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .filter-form__sort {
   width: 193px;
 }
@@ -1440,9 +1446,16 @@ img {
   width: 218px;
 }
 
+.filter-form__price label {
+  margin-right: 15px;
+}
+
+.filter-form__price legend {
+  margin-right: 2px;
+}
+
 .filter-form__price input {
-  width: 35px;
-  text-align: center;
+  width: 25px;
   background: transparent;
   border: none;
 }
@@ -1456,7 +1469,18 @@ img {
 }
 
 .form-price__wrapper {
+  position: relative;
   display: flex;
+}
+
+.form-price__wrapper::before {
+  position: absolute;
+  left: 114px;
+  top: 8px;
+  content: "";
+  width: 6px;
+  height: 1px;
+  background: #ffffff;
 }
 
 .filter-form__price input::-webkit-input-placeholder {
