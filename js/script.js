@@ -8,7 +8,6 @@ var modal = document.querySelector('.modal');
 var overlay = document.querySelector('.modal__overlay');
 
 
-
 control_1.addEventListener('click', function (evt) {
   body.classList.add('background-1');
   body.classList.remove('background-2');

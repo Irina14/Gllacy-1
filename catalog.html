@@ -130,7 +130,8 @@
               <option>по жирности</option>
             </select>
           </fieldset>
-          <fieldset class="filter-form__price">
+          <fieldset class="filter-form__price form-price">
+            <div class="form-price__wrapper">
             <legend>Цена:</legend>
             <label><span class="visually-hidden">От</span>
               <input type="text" name="price-min" placeholder="100"> руб.
@@ -138,6 +139,7 @@
             <label><span class="visually-hidden">До</span>
               <input type="text" name="price-max" placeholder="500"> руб.
             </label>
+            </div>
             <div class="price-bar">
               <button class="price-control-min" type="button"><span class="visually-hidden">Минимальная стоимость</span></button>
               <button class="price-control-max" type="button"><span class="visually-hidden">Максимальная стоимость</span></button>
@@ -237,7 +239,7 @@
           Сделано в <a class="copyright__link link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2017
         </p>
     </footer>
-
+   <script src="js/script.js"></script>
   </body>
 </html>
 

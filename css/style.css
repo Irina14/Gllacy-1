@@ -1396,6 +1396,7 @@ img {
 .filter__form fieldset {
   border: none;
   margin: 0;
+  margin-right: 15px;
   padding: 0;
 }
 
@@ -1409,7 +1410,7 @@ img {
 }
 
 .filter-form__sort select {
-  width: 183px;
+  width: 193px;
   height: 36px;
   padding-left: 10px;
   font-size: 16px;
@@ -1434,3 +1435,43 @@ img {
   background: #9db1a5;
   outline: none;
 }
+
+.filter-form__price {
+  width: 218px;
+}
+
+.filter-form__price input {
+  width: 35px;
+  text-align: center;
+  background: transparent;
+  border: none;
+}
+
+.filter-form__price label,
+.filter-form__price input {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.form-price__wrapper {
+  display: flex;
+}
+
+.filter-form__price input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.filter-form__price input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.filter-form__price input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.filter-form__price input::placeholder {
+  color: #ffffff;
+}
+
