@@ -159,28 +159,20 @@
               <label for="fatness-4">выше 30%</label>
             </div>
           </fieldset>
-          <fieldset class="filter-form__fillers">
-            <legend>Наполнители:</legend>
-            <label>
-             <input type="checkbox" name="chocolate" checked>
-              шоколадные
-            </label>
-            <label>
-             <input type="checkbox" name="sugar-powders" checked>
-              сахарные присыпки
-            </label>
-            <label>
-             <input type="checkbox" name="fruits">
-              фрукты
-            </label>
-            <label>
-             <input type="checkbox" name="syrups">
-              сиропы
-            </label>
-            <label>
-             <input type="checkbox" name="jams">
-              джемы
-            </label>
+          <fieldset class="filter-form__fillers form-fillers">
+            <div class="form-fillers__wrapper">
+              <legend>Наполнители:</legend>
+              <input type="checkbox" name="chocolate" id="chocolate-field" checked>
+              <label for="chocolate-field">шоколадные</label>
+              <input type="checkbox" name="sugar-powders" id="sugar-powders-field" checked>
+              <label for="sugar-powders-field"> сахарные присыпки</label>
+              <input type="checkbox" name="fruits" id="fruits-field">
+              <label for="fruits-field">фрукты</label>
+              <input type="checkbox" name="syrups" id="syrups-field">
+              <label for="syrups-field">сиропы</label>
+              <input type="checkbox" name="jams" id="jams-field">
+              <label for="jams-field">джемы</label>
+            </div>
           </fieldset>
           <button class="filter-form__button" type="submit">Применить</button>
         </form>
