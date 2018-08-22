@@ -144,26 +144,20 @@
               <button class="price-bar__control price-bar__control--min" type="button"><span class="visually-hidden">Минимальная стоимость</span></button>
               <button class="price-bar__control price-bar__control--max" type="button"><span class="visually-hidden">Максимальная стоимость</span></button>
               <div class="price-bar__scale"></div>
-            </div>
+            </div class="">
           </fieldset>
-          <fieldset class="filter-form__fatness">
+          <fieldset class="filter-form__fatness form-fatness">
             <legend>Жирность:</legend>
-            <label>
-              <input type="radio" name="fatness" value="0%">
-              0%
-            </label>
-            <label>
-              <input type="radio" name="fatness" value="до 10%" checked>
-              до 10%
-            </label>
-            <label>
-              <input type="radio" name="fatness" value="до 30%">
-              до 30%
-            </label>
-            <label>
-              <input type="radio" name="fatness" value="выше 30%">
-              выше 30%
-            </label>
+            <div class="form-fatness__wrapper filter-form__background">
+              <input class="visually-hidden" type="radio" name="fatness" id="fatness-1" value="0%">
+              <label for="fatness-1">0%</label>
+              <input class="visually-hidden" type="radio" name="fatness" id="fatness-2" value="до 10%" checked>
+              <label for="fatness-2">до 10%</label>
+              <input class="visually-hidden" type="radio" name="fatness" id="fatness-3" value="до 30%">
+              <label for="fatness-3">до 30%</label>
+              <input class="visually-hidden" type="radio" name="fatness" id="fatness-4" value="выше 30%">
+              <label for="fatness-4">выше 30%</label>
+            </div>
           </fieldset>
           <fieldset class="filter-form__fillers">
             <legend>Наполнители:</legend>
