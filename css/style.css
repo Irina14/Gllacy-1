@@ -813,7 +813,8 @@ img {
   padding: 5px 1.15%;
 }
 
-.products__item ~ li {
+.products__item:hover ~ li,
+.products__item:focus ~ li {
   z-index: 0;
 }
 
@@ -1379,6 +1380,7 @@ img {
 }
 
 .filter {
+  width: 100%;
   line-height: 18px;
   font-weight: 500;
   padding: 0 2.3%;
