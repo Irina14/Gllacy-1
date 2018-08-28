@@ -1400,6 +1400,10 @@ img {
   padding: 0;
 }
 
+.filter__form fieldset:nth-child(3) {
+  margin-right: 0;
+}
+
 .filter__form {
   display: flex;
   flex-wrap: wrap;
@@ -1559,12 +1563,9 @@ img {
           transform: scale(1.1);
 }
 
-.filter-form__fatness {
-  width: 420px;
-}
-
 .form-fatness__wrapper {
   display: flex;
+  flex-wrap: wrap;
   padding: 7px 14px;
 }
 
@@ -1611,7 +1612,8 @@ img {
   margin-right: 8px;
 }
 
-.form-fatness__wrapper input[type="radio"]:focus + label::before {
+.form-fatness__wrapper input[type="radio"]:focus + label::before,
+.form-fillers__wrapper input[type="checkbox"]:focus + label::before {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
@@ -1627,6 +1629,90 @@ img {
   opacity: 0.4;
   cursor: auto;
 }
+
+.form-fillers__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px 16px;
+}
+
+.form-fillers__wrapper label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 33px;
+  margin-right: 20px;
+}
+
+.form-fillers__wrapper label:last-child {
+  margin-right: 0;
+}
+
+.form-fillers__wrapper input[type="checkbox"] + label::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("../img/checkbox-off.svg") no-repeat;
+}
+
+.form-fillers__wrapper input[type="checkbox"]:checked + label::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 23px;
+  height: 20px;
+  background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.form-fillers__wrapper label::before {
+  opacity: 0.8;
+}
+
+.form-fillers__wrapper input[type="checkbox"]:hover + label::before,
+.form-fillers__wrapper input[type="checkbox"]:focus + label::before {
+  opacity: 1;
+}
+
+.form-fillers__wrapper input[type="checkbox"]:disabled + label::before {
+  opacity: 0.4;
+  cursor: auto;
+}
+
+.filter-form__button {
+  align-self: center;
+  margin-top: 5px;
+  padding: 0 25px;
+  font: inherit;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: 500;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.filter-form__button:hover,
+.filter-form__button:focus {
+  color: #323232;
+  background: #fbfcfb;
+}
+
+.filter-form__button:hover,
+.filter-form__button:focus {
+  color: #323232;
+  background: #fbfcfb;
+}
+
+.filter-form__button:active {
+  color: #323232;
+  background: #eaeaea;
+  border: 2px solid #eaeaea;
+  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+}
+
+
+
 
 
 
