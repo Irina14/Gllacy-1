@@ -1724,7 +1724,115 @@ img {
   margin-top: 31px;
 }
 
+.pagination__list {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  margin-top: 74px;
+  margin-bottom: 35px;
+  padding: 0 1.15%;
+  line-height: 18px;
+  font-weight: 500;
+  list-style: none;
+}
 
+.pagination__item a {
+  color: #ffffff;
+}
 
+.pagination__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  margin-right: 2px;
+}
 
+.pagination__item:first-child a::before,
+.pagination__item:last-child a::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  vertical-align: middle;
+  border: 1px solid #ffffff;
+  transform: rotate(45deg);
+}
+
+.pagination__item:first-child,
+.pagination__item:last-child  {
+  width: 23px;
+  margin-right: 0;
+}
+
+.pagination__item:first-child {
+  justify-content: flex-start;
+}
+
+.pagination__item:last-child {
+  justify-content: flex-end;
+}
+
+.pagination__item:first-child a::before {
+  border-top-width: 0;
+  border-right-width: 0;
+}
+
+.pagination__item:last-child a::after {
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
+.pagination__item--disabled a::before,
+.pagination__item--disabled a::after {
+  opacity: 0.2;
+}
+
+.pagination__item--disabled a {
+  pointer-events: none;
+}
+
+.pagination__list::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  width: 97.7%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.pagination__item--current {
+  width: 26px;
+  height: 26px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.pagination__item--current a {
+  color: #323232;
+}
+
+.pagination__item:not(:first-child):not(:last-child):hover,
+.pagination__item:not(:first-child):not(:last-child):focus {
+  width: 26px;
+  height: 26px;
+  background: #9db1a5;
+  border-radius: 50%;
+}
+
+.pagination__item:not(:first-child):not(:last-child):active {
+  width: 26px;
+  height: 26px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.pagination__item:not(:first-child):not(:last-child):active a {
+  color: #323232;
+}
 
