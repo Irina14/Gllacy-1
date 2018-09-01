@@ -1467,7 +1467,7 @@ img {
   display: inline-block;
   width: 193px;
   padding-right: 30px;
-  background: #a9bab0;
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   overflow: hidden;
 }
