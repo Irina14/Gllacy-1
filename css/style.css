@@ -1119,7 +1119,7 @@ img {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 338px;
   z-index: 4;
   left: calc(50% - 239px);
@@ -1440,13 +1440,16 @@ img {
 }
 
 .filter-form__sort select {
-  width: 193px;
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 140%;
   height: 36px;
   padding-left: 10px;
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
-  background: #a9bab0;
+  background: transparent;
   border: none;
   border-radius: 20px;
 }
@@ -1459,11 +1462,43 @@ img {
   background: #ffffff;
 }
 
+.select__container {
+  position: relative;
+  display: inline-block;
+  width: 193px;
+  padding-right: 30px;
+  background: #a9bab0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.select__container::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  right: 12px;
+  top: calc(50% - 5px);
+  border: 10px solid #ffffff;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-bottom-width: 0;
+  border-color: #ffffff transparent;
+}
+
 .filter-form__sort select:hover,
 .filter-form__sort select:focus {
   color: #323232;
-  background: #9db1a5;
   outline: none;
+}
+
+.select__container:hover,
+.select__container:focus{
+  background: #9db1a5;
+}
+
+.select__container:hover::after,
+.select__container:focus::after {
+  border-color: #323232 transparent;
 }
 
 .filter-form__price {
@@ -1779,6 +1814,7 @@ img {
 }
 
 .pagination__item a {
+  display: block;
   width: 26px;
   height: 26px;
   line-height: 26px;
@@ -1789,9 +1825,6 @@ img {
 
 .pagination__item {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-right: 2px;
 }
 

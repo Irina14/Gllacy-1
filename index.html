@@ -235,22 +235,21 @@
           <a class="map-contacts__button button" href="#">Форма обратной связи</a>
         </div>
       </section>
-      <div class="modal__overlay modal__overlay--close">
-          <section class="modal modal-close">
-          <h2 class="visually-hidden">Форма обратной связи</h2>
-          <form class="modal__feedback form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="modal__text">Мы обязательно вам ответим!</p>
-            <label class="visually-hidden" for="name-field">Имя</label>
-            <input type="text" name="name" id="name-field" placeholder="Как вас зовут?">
-            <label class="visually-hidden" for="email-feedback-field">Почта</label>
-            <input type="email" name="email-feedback" id="email-feedback-field" placeholder="Ваша почта для ответа?" required>
-            <label class="visually-hidden" for="text-field">Текст</label>
-            <textarea name="text" id="text-field" placeholder="Напишите что-нибудь..." required></textarea>
-            <button class="modal__button button" type="submit">Отправить</button>
-            <button class="modal__close close" type="button"><span class="visually-hidden">Закрыть</span></button>
-          </form>
-        </section>
-      </div>
+      <section class="modal modal-close">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form class="modal__feedback form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="modal__text">Мы обязательно вам ответим!</p>
+          <label class="visually-hidden" for="name-field">Имя</label>
+          <input type="text" name="name" id="name-field" placeholder="Как вас зовут?">
+          <label class="visually-hidden" for="email-feedback-field">Почта</label>
+          <input type="email" name="email-feedback" id="email-feedback-field" placeholder="Ваша почта для ответа?" required>
+          <label class="visually-hidden" for="text-field">Текст</label>
+          <textarea name="text" id="text-field" placeholder="Напишите что-нибудь..." required></textarea>
+          <button class="modal__button button" type="submit">Отправить</button>
+          <button class="modal__close close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        </form>
+      </section>
+      <div class="modal__overlay modal__overlay--close"></div>
     </main>
     <footer class="footer">
         <ul class="footer__social social">
