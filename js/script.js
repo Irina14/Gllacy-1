@@ -6,7 +6,20 @@ var feedback = document.querySelector('.map-contacts__button');
 var close = document.querySelector('.modal__close');
 var modal = document.querySelector('.modal');
 var overlay = document.querySelector('.modal__overlay');
+var form = modal.querySelector('.modal__feedback');
+var name = modal.querySelector('[name=name]');
+var email = modal.querySelector('[name=email-feedback]');
 
+var isStorageSupport = true;
+var storageName = '';
+var storageEmail = '';
+
+  try {
+    storageName = localStorage.getItem('name');
+    storageEmail = localStorage.getItem('email');
+  } catch (err) {
+    isStorageSupport = false;
+  }
 
 control_1.addEventListener('click', function (evt) {
   body.classList.add('background-1');
@@ -26,18 +39,39 @@ control_3.addEventListener('click', function (evt) {
   body.classList.remove('background-1');
 });
 
-feedback.addEventListener('click', function(evt) {
+
+
+feedback.addEventListener('click', function (evt) {
   evt.preventDefault();
   modal.classList.add('modal-open');
-  modal.classList.remove('modal-close');
   overlay.classList.add('modal__overlay--open');
-  overlay.classList.remove('modal__overlay--close');
-});
 
-close.addEventListener('click', function(evt) {
+   if (storageName || storageEmail) {
+    name.value = storageName;
+    email.value = storageEmail;
+  }
+  });
+
+if (isStorageSupport) {
+    localStorage.setItem('name', name.value);
+    localStorage.setItem('email', email.value);
+}
+
+close.addEventListener('click', function (evt) {
   evt.preventDefault();
-  modal.classList.add('modal-close');
   modal.classList.remove('modal-open');
-  overlay.classList.add('modal__overlay--close');
   overlay.classList.remove('modal__overlay--open');
 });
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (modal.classList.contains('modal-open')) {
+     modal.classList.remove('modal-open');
+     overlay.classList.remove('modal__overlay--open');
+    }
+  }
+});
+
+
+
